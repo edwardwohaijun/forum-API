@@ -10,13 +10,15 @@ cd forum-API
 npm install
 npm run dev
 ```
-For production build, `npm run build`, then deploy the **dist/** folder on a web server.
+For production build, `npm run build`, then deploy the **dist/** folder on a web server, then run `node dist/index.js`.
 ## Deploy via Docker
 ```
 docker build . -t forum-api
 docker run -p 8000:8000 -d forum-api
 ```
 Run `docker ps` to make sure the container is running.
+
+By default, the server runs on port 8000.
 
 # Usage
 Use postman or other client tool to make the API calls.
