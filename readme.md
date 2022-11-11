@@ -11,6 +11,8 @@ npm install
 npm run dev
 ```
 For production build, `npm run build`, then deploy the **dist/** folder on a web server, then run `node dist/index.js`.
+
+To be implemented: use pm2 or other daemon monitor to manage the server instance.
 ## Deploy via Docker
 ```
 docker build . -t forum-api
