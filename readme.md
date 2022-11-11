@@ -103,12 +103,12 @@ Keep-Alive: timeout=5
 ### Request
 GET /messages
 ```
-curl -i -H 'Accept: application/json' http://localhost:8000/messages
+curl -i -H 'Accept: application/json' http://localhost:8000/messages&channelId=channelA&currentPage=1&pageSize=2
 ```
 ### Parameter requirements
 **channelId** should be an existing channel Id. The result is paginated by:
 - **pageSize**: a number indicating the number of records(default is 2)
-- **currentPage**: a number indicating the current page
+- **currentPage**: a number indicating the current page(default is 1)
 ### Response
 ```
 {
