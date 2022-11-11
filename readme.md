@@ -24,8 +24,10 @@ By default, the server runs on port 8000.
 Use postman or other client tool to make the API calls.
 ## create a channel
 ### Request
-`POST /channel`
-`curl -i -H 'Accept: application/json' -d 'name=channelABC' http://localhost:8000/channel`
+POST /channel
+```
+curl -i -H 'Accept: application/json' -d 'name=channelABC' http://localhost:8000/channel
+```
 ### Parameter requirements
 **name** should NOT exceed 10 characters long, otherwise 400 bad request is returned.
 ### Response
