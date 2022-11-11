@@ -97,7 +97,8 @@ Keep-Alive: timeout=5
 [
     {"id":"channelA","name":"channel A"},
     {"id":"channelB","name":"channel B"},
-    {"id":"channelC","name":"channel C"},{"id":"01c1bf08-4b22-4fae-a6e2-c52e45c10e9e","name":"channelABC"}
+    {"id":"channelC","name":"channel C"},
+    {"id":"01c1bf08-4b22-4fae-a6e2-c52e45c10e9e","name":"channelABC"}
 ]
 ```
 
@@ -105,7 +106,7 @@ Keep-Alive: timeout=5
 ### Request
 GET /messages
 ```
-curl -i -H 'Accept: application/json' http://localhost:8000/messages&channelId=channelA&currentPage=1&pageSize=2
+curl -i -H 'Accept: application/json' http://localhost:8000/messages?channelId=channelA&currentPage=1&pageSize=2
 ```
 ### Parameter requirements
 **channelId** should be an existing channel Id. The result is paginated by:
